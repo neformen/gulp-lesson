@@ -1,0 +1,206 @@
+/**
+* Swiper 3.0.5
+* Most modern mobile touch slider and framework with hardware accelerated transitions
+*
+* http://www.idangero.us/swiper/
+*
+* Copyright 2015, Vladimir Kharlampidi
+* The iDangero.us
+* http://www.idangero.us/
+*
+* Licensed under MIT
+*
+* Released on: March 22, 2015
+*/
+.swiper-container {
+width: 100%;
+height: 300px;
+max-width: 1160px;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+/* Fix of Webkit flickering */
+z-index: 1;
+}
+.swiper-container-no-flexbox .swiper-slide {
+float: left;
+}
+.swiper-container-vertical > .swiper-wrapper {
+-webkit-box-orient: vertical;
+-moz-box-orient: vertical;
+-ms-flex-direction: column;
+-webkit-flex-direction: column;
+flex-direction: column;
+}
+.swiper-wrapper {
+position: relative;
+width: 100%;
+height: 90%;
+z-index: 1;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+-ms-transition-property: -ms-transform;
+transition-property: transform;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+-webkit-transform: translate3d(0px, 0, 0);
+-moz-transform: translate3d(0px, 0, 0);
+-o-transform: translate(0px, 0px);
+-ms-transform: translate3d(0px, 0, 0);
+transform: translate3d(0px, 0, 0);
+}
+.swiper-container-multirow > .swiper-wrapper {
+-webkit-box-lines: multiple;
+-moz-box-lines: multiple;
+-ms-fles-wrap: wrap;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+.swiper-container-free-mode > .swiper-wrapper {
+-webkit-transition-timing-function: ease-out;
+-moz-transition-timing-function: ease-out;
+-ms-transition-timing-function: ease-out;
+-o-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+margin: 0 auto;
+}
+.swiper-slide {
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-flex-shrink: 0;
+-ms-flex: 0 0 auto;
+flex-shrink: 0;
+width: 360px;
+height: 250px;
+overflow: hidden;
+position: relative;
+background-color: #3e3e3e;
+text-align: center;
+}
+/* a11y */
+.swiper-container .swiper-notification {
+position: absolute;
+left: 0;
+top: 0;
+pointer-events: none;
+opacity: 0;
+z-index: -1000;
+}
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+-ms-touch-action: pan-y;
+touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+-ms-touch-action: pan-x;
+touch-action: pan-x;
+}
+/* Pagination Styles */
+.swiper-pagination {
+position: absolute;
+text-align: center;
+-webkit-transition: 300ms;
+-moz-transition: 300ms;
+-o-transition: 300ms;
+transition: 300ms;
+-webkit-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+z-index: 10;
+}
+.swiper-pagination.swiper-pagination-hidden {
+opacity: 0;
+}
+.swiper-pagination-bullet {
+width: 8px;
+height: 8px;
+display: inline-block;
+border-radius: 100%;
+background: #000;
+opacity: 0.2;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+cursor: pointer;
+}
+.swiper-pagination-white .swiper-pagination-bullet {
+background: #fff;
+}
+.swiper-pagination-bullet-active {
+opacity: 1;
+background: #eb4200;
+}
+.swiper-pagination-white .swiper-pagination-bullet-active {
+background: #fff;
+}
+.swiper-pagination-black .swiper-pagination-bullet-active {
+background: #000;
+}
+.swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet {
+margin: 5px 0;
+display: block;
+}
+.swiper-container-horizontal > .swiper-pagination {
+bottom: 25px;
+left: 0;
+width: 100%;
+}
+.swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet {
+margin: 0 5px;
+}
+/* Coverflow */
+.swiper-container-coverflow .swiper-wrapper {
+/* Windows 8 IE 10 fix */
+-ms-perspective: 1200px;
+}
+/* Scrollbar */
+.swiper-scrollbar {
+border-radius: 10px;
+position: relative;
+-ms-touch-action: none;
+background: rgba(0, 0, 0, 0.1);
+}
+.swiper-container-horizontal > .swiper-scrollbar {
+position: absolute;
+left: 1%;
+bottom: 3px;
+z-index: 50;
+height: 5px;
+width: 98%;
+}
+.swiper-container-vertical > .swiper-scrollbar {
+position: absolute;
+right: 3px;
+top: 1%;
+z-index: 50;
+width: 5px;
+height: 98%;
+}
+.swiper-scrollbar-drag {
+height: 100%;
+width: 100%;
+position: relative;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+left: 0;
+top: 0;
+}
+.swiper-scrollbar-cursor-drag {
+cursor: move;
+}

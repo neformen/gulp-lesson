@@ -1,0 +1,350 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (max-width: 1160px) {
+	.low {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.low {
+		font-size: 12px;
+		padding: 0 5px;
+	}
+
+	.footer .higher-part {
+		padding-right:0;
+	}
+    
+	.footer-socials a .likers {
+		display: none;
+	}
+
+	.footer-socials .fb-btn {
+		min-width: 90px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	header {
+		height: 500px;
+	}
+
+	.top-nav {
+		width: 74%;
+	}
+
+	.lang-ch {
+		width: 9%;
+	}
+
+	.top-nav li a {
+		font-size: 12px;
+	}
+
+	.low-nav {
+		width: 100%;
+		padding: 0 7px;
+		float:none;
+	}
+
+	.text-content .left-side, .right-side {
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.text-content .right-side {
+		margin-left: 0;
+	}
+
+	.article {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.header-adv {
+		margin-top: 6%;
+	}
+	.header-adv h1{
+		font-size: 32px;
+	}
+
+	.header-adv h2 {
+		font-size: 20px;
+	}
+
+	.low {
+		bottom:30px;
+	}
+
+	.footer-manufacture .becker-info {
+		display: none;
+	}
+
+	.footer-manufacture {
+		width: 10%;
+		background-size: 100% auto;
+	}
+
+	.footer-nav {
+		width: 75%;
+		padding: 0 10px 0 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.footer-socials {
+		display: none;
+	}
+
+	.footer-nav {
+		width:90%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.header-adv h1 {
+		font-size: 28px;
+	}
+
+	.header-adv h2 {
+		font-size:16px;
+	}
+
+	/*navigation refactory */
+	.top-nav {
+		display: block;
+		position: relative;
+		padding-top: 75px;
+		background: url('../img/menu-adapt.png') no-repeat 10% center;
+		width:88%;
+	}
+
+	.lang-ch {
+		width: 12%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.top-nav li {
+		display: none;
+		width: 40%;
+		height: 50px;
+		background-color: #ffffff;
+		position: relative;
+		z-index: 50;
+		border: 1px solid #3e3e3e;
+		border-top:0;
+		border-left: 0;
+	}
+
+	.top-nav li a{
+		line-height: 50px;
+	}
+
+	.sub-block {
+		display: none;
+		visibility: visible;
+		padding: 10px 0;
+		opacity: 1;
+		left: 100%;
+		top:0;
+		width: 180%;
+	}
+
+	.sub-block-item {
+		width: 49%;
+		height: 160px;
+	}
+
+	.top-nav:hover > li{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 560px) {
+
+	.header-adv {
+		margin-top: 4%;
+	}
+	.header-adv h1{
+		font-size: 23px;
+	}
+
+	.header-adv h2 {
+		font-size: 15px;
+	}
+
+	.orange-white h4 {
+		font-size: 12px;
+	}
+	
+	.contact-item {
+		width: 22%;
+	}
+
+	.contact-item i {
+		display: none;
+	}
+
+	.sticker-text:after {
+		right: -15px;
+	}
+
+	.orange-after {
+		right: -29px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.toggle-icon {
+		display: none;
+	}
+
+	.sub-block-item {
+		width: 45%;
+		height: 140px;
+	}
+
+	.sub-block-item a {
+		width: 100px;
+		height: 100px;
+	}
+
+	.low {
+		font-size: 10px;
+	}
+
+	.orange i {
+		width:50px;
+	}
+
+	.footer .footer-manufacture {
+		display: none;
+	}
+
+	.footer-nav-item a {
+		font-size: 10px;	
+	}
+
+	.footer .higher-part {
+		height: 60px;
+	}
+
+	.footer-nav li {
+		line-height: 60px;
+	}
+
+	.footer, .page-wrap:after {
+		height: 95px;
+	}
+
+	.page-wrap {
+		margin-bottom: -95px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	
+	.header-adv h1{
+		font-size: 20px;
+	}
+
+	.header-adv h2 {
+		font-size: 14px;
+	}
+
+	.header-adv .adv-btn {
+		width: 230px;
+	}
+
+	.orange-white h4 {
+		font-size: 10px;
+	}
+
+	.low {
+		font-size: 11px;
+	}
+
+	.low-nav {
+		width:49%;
+		display: inline-block;
+		vertical-align: baseline;
+		padding:0;
+	}
+
+	.low-nav li {
+		width:100%;
+		display: block;
+	}
+
+	.footer-nav {
+		width:100%;
+	}
+
+	.footer-nav-item {
+		width:33%;
+		text-align: center;
+	}
+
+	.contact-item {
+		display: none;
+	}
+} 
+
+@media screen and (max-width: 380px) {
+	.top-nav {
+		width:80%;
+	}
+	
+	.top-nav li {
+		width: 50%;
+	}
+
+	.sub-block {
+		width: 140%;
+	}
+
+	.sub-block-item {
+		width: 100%;
+		height: 140px;
+	}
+
+	.lang-ch {
+		width:20%;
+	}
+
+	.toggle-icon {
+		display: block;
+	}
+
+	.sticker {
+		width: 140px;
+	}
+
+	.swiper-slide a:hover .sticker {
+		width:170px;
+	}	
+
+}
+
+@media screen and (max-width: 350px) {
+
+	.sticker {
+		width: 170px;
+	}
+}
