@@ -3,11 +3,11 @@
 - npm install
 - bower install
 
-#How to run with wathers or just build
+#How to run with watchers or just build
+
+- gulp serve
 
 - gulp build
-or
-- gulp serve
 
 --------------------
 Hometask:
@@ -26,9 +26,9 @@ normalize.scss / reset.scss  установить через bower
   - Можно задать опцию с названием папки и билдить в нее, например 'gulp build --app' (гуглите yargs и gulp-yargs)
   - Таска для деплоя например на github-pages (гуглите github pages gulp)
   - ЛЮБОЙ другой функционал, но со смыслом.
-* Не забудьте, что в файл .gitignore надо добавить папку node_modules/* и bower_components/*, чтобы случайно не закоммитать
+  
+Не забудьте, что в файл .gitignore надо добавить папку node_modules/* и bower_components/*, чтобы случайно не закоммитать
 лишнее. Не забудьте сделать хотябы небольшой readmе где будет описано как запускать проект и какие есть гулп таски.
----------------------
 
 Материалы для изучения:
 - В первую очередь:    https://learn.javascript.ru/screencast/gulp
