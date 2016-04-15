@@ -1,0 +1,22 @@
+{
+  "name": "gulp-lesson",
+  "homepage": "https://github.com/Tamango92/gulp-lesson",
+  "authors": [
+    "tamango92 <ar.arkhipov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.2",
+    "Swiper": "swiper#3.0.5"
+  }
+}

@@ -9,7 +9,6 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     initialSlide: 1,
     loop: true,
-    autoplay: 5000,
     speed: 500,
     DOMAnimation: false
 });

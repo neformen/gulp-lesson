@@ -11,7 +11,6 @@ html {
 	-ms-text-size-adjust: 100%; /* 2 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
-
 /**
  * Remove default margin.
  */
@@ -464,7 +463,7 @@ header, nav, section, article, aside, footer {
 /*header*/
 
 header {
-	margin: 0 auto;
+	margin:0px auto;
 	width:100%;
 	position: relative;
 	background: url('../img/header-bg.jpg') no-repeat top center;
