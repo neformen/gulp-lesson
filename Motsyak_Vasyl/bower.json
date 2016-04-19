@@ -1,0 +1,21 @@
+{
+  "name": "Motsyak_Vasyl",
+  "homepage": "https://github.com/neformen/gulp-lesson",
+  "authors": [
+    "Vasyl <neformen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset.scss": "^1.0.1"
+  }
+}
